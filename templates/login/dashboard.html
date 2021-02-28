@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="logout">Logout</a>
+	<h1>Welcome {{sesname}} to dashboard</h1>
+<hr>
+<h1>{{sesname}} Information</h1>
+<hr>
+{% for data in information %}
+<p>Username :{{data.username}} </p>
+<p>Password : {{data.password}}</p>
+<p>Email : {{data.email}}</p>
+<p>Mobile :{{data.mobile}} </p>
+{% endfor %}
+
+<hr>
+<a href="resume" target="__blank">Create Resume</a>
+
+</body>
+</html>

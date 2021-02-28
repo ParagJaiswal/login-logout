@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="" method="post">
+		{% csrf_token %}
+		<input type="text" name="txtusername" placeholder="Enter Username"><br>
+		<input type="password" name="txtpassword" placeholder="Enter Password"><br>
+		<input type="submit" name="btn" value="SUBMIT">
+		<a href="/">New User Register Now</a>
+		
+
+	</form>
+	{{invalid}}
+		
+
+</body>
+</html>

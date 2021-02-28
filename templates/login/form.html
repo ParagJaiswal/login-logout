@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form action="" method="post">
+		{% csrf_token %}
+		<input type="text" name="txtusername" placeholder="Enter Username" required=""><br>
+		<input type="text" name="txtpass" placeholder="Enter Password" required=""><br>
+		<input type="text" name="txtemail" placeholder="Enter Email ID" required=""><span style="color: red">{{key}}</span><br>
+		<input type="text" name="txtmobile" placeholder="Enter Mobile Number" required=""><br>
+		<input type="submit" name="btn" value="Register">
+		<a href="login">Login</a>
+
+		
+	</form>
+		
+
+</body>
+</html>
